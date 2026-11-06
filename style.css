@@ -1,0 +1,166 @@
+.navbar {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px; 
+    background-color: #003875;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 10000; 
+    display: flex;
+    align-items: center;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none; 
+    display: flex;    
+    gap: 20px;        
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-logo:hover,
+.nav-links a:hover {
+    color: #cccccc;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  padding: 15px;
+  padding-top: 75px; 
+}
+
+h1 {
+  color: #0056b3;
+}
+
+h2 {
+  color: #0056b3;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+th {
+  font-weight: 700;
+  color: #0056b3;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  border-bottom: 3px solid #0056b3;
+  padding: 15px;
+}
+
+th h3 {
+  font-weight: 700;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+th, td {
+  padding: 15px;
+}
+
+td {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+td h3 {
+  font-style: bold;
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+td ul {
+  margin-top: 4px;
+  margin-bottom: 0;
+  padding-left: 15px;
+  color: #000000;
+}
+
+td li {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 6px;
+}
+
+tr:nth-child(even) {
+  background-color: #e6f0fa;
+}
+
+.clinical-context {
+  font-style: italic;
+  color: #555555;
+  font-size: 14px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+
+.content { 
+  max-height: 0; 
+  overflow: hidden; 
+  transition: max-height 0.2s ease-out; 
+}
+
+.collapsible {
+  background-color: #ffffff;
+  color: #0056b3;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border-width: 3px;
+  border-style: solid; 
+  border-color: #0056b3;
+  overflow: hidden;
+  border-radius: 6px;
+  text-align: left;
+  outline: none;
+  margin-top: 20px;
+  margin-bottom:20px;
+}
+
+.collapsible:hover {
+  background-color: #f1f1f1;
+}
+
+a {
+    color: #0056b3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #666666;
+  text-decoration: underline;
+}
