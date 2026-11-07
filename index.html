@@ -11,7 +11,7 @@
 </nav>
 
 
-<h1>NHS Prescription Deprivation Analysis</h1>
+<h1>NHS England GLP-1 Prescribing by IMD Decile</h1>
 
 <body>
   
@@ -22,16 +22,22 @@
     <button type="button" class="collapsible"><h2>Clinical Context</h2></button>
     <div class="content">
 
+        <h3>Health Inequalities</h3>
+        
         <p>
-        Type II diabetes in the UK is more prevalent in lower income populations. According to Health Survey for England 2024, individuals living in the most deprived 10% of areas in England are almost three times as likely to be diagnosed with type II diabetes compared to those living in the 10% least deprived areas <a href="#references" class="scroll-and-open">[3]</a>.
+        Type II diabetes in the UK is more prevalent in lower income populations. According to Health Survey for England 2024, individuals living in the most deprived 10% of areas in England are almost three times as likely to be diagnosed with type II diabetes compared to those living in the 10% least deprived areas <a href="#references" class="scroll-and-open">[1]</a>.
         </p>
-
+        
+        <h3>Emerging Therapies</h3>
+        
         <p>
         GLP-1 is a naturally occurring hormone released after eating. GLP-1 RAs mimic it by inhibiting glucagon release, while simultaneously stimulating insulin production to reduce blood sugar levels and control type II diabetes. By suppressing appetite and slowing digestion, these medications are also highly beneficial for patients with obesity struggling to lose weight <a href="#references" class="scroll-and-open">[2]</a>.
         </p>
+
+        <h3>Socioeconomic Barriers to Access</h3>
         
         <p>
-        Despite disproportionate clinical need, when breakthrough medicines like GLP-1 RAs become available, those of more precarious socio-economic backgrounds are usually the last to access them, despite the fact that they typically need them the most. With GLP-1 medications, this disparity is accelerated by a thriving private market, which allows affluent populations to purchase out-of-pocket treatment, while resource-constrained public routes face restricted rollouts <a href="#references" class="scroll-and-open">[1]</a>.
+        Despite disproportionate clinical need, when breakthrough medicines like GLP-1 RAs become available, those of more precarious socio-economic backgrounds are usually the last to access them, despite the fact that they typically need them the most. With GLP-1 medications, this disparity is accelerated by a thriving private market, which allows affluent populations to purchase out-of-pocket treatment, while resource-constrained public routes face restricted rollouts <a href="#references" class="scroll-and-open">[3]</a>.
         </p>
 
         <p>
@@ -42,13 +48,29 @@
     
     </div>
   
-    <button type="button" class="collapsible"> <h2>Python Pipeline Results</h2> </button>
+    <button type="button" class="collapsible"> <h2>Methodology</h2> </button>
     <div class="content";>  
-        <strong> 
-        <p>To be Updated with pipeline results.</p>
-        </strong>
-    </div>
-  
+
+        <p>This analysis evaluates primary care data from <strong>October 2025</strong>. This specific timeframe was selected to synchronise two critical national datasets</p>
+        
+        <ul>
+          <li><strong>Government Index Release:</strong> Aligns perfectly with the publication of the English Indices of Deprivation 2025 (IoD25).</li>
+          <li><strong>NHS Quarterly Window:</strong> Matches the quarterly release of NHS GP Practice registrations required to extract localised LSOA population data.</li>
+        </ul>
+        
+        <p>The data processing was executed in <strong>Python</strong> using the <strong>Pandas</strong> library to merge and map the datasets via the following key variable fields:</p>
+        
+        <ul>
+          <li><strong><code>PRACTICE_CODE</code>:</strong> The unique identifier for matching individual prescription records to specific GP practices.</li>
+          <li><strong><code>LSOA_CODE</code>:</strong> The geographic neighbourhood boundary code used to map each practice to its primary patient catchment area.</li>
+          <li><strong><code>IMD_DECILE</code>:</strong> The structural deprivation rank extracted from the government indices to evaluate socioeconomic distribution.</li>
+        </ul>
+
+        <button type="button" class="collapsible"> <h2>Results</h2> </button>
+        <div class="content";>  
+            
+        </div>
+      
   <button type="button" id="references" class="collapsible"> <h2>References</h2> </button>
   <div class="content">
 
