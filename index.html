@@ -16,7 +16,7 @@
 <body>
   
     <p>
-    The objective of this data analysis project to evaluate and visualise how variations in glucagon-like pepetide-1 receptor agonist (GLP-1 RA) prescription rates is related to wealth disparity in England.
+    The objective of this data analysis project to evaluate and visualise how variations in glucagon-like pepetide-1 receptor agonist (glp-1 RA) prescription rates is related to wealth disparity in England.
     </p>
 
     <button type="button" class="collapsible"><h2>Clinical Context</h2></button>
@@ -25,7 +25,7 @@
         <h3>Health Inequalities</h3>
         
         <p>
-        Type 2 diabetes in the UK is more prevalent in lower income populations. According to Health Survey for England 2024, individuals living in the most deprived 10% of areas in England are almost three times as likely to be diagnosed with type II diabetes compared to those living in the 10% least deprived areas <a href="#references" class="scroll-and-open">[1]</a>.
+        Type 2 diabetes in the UK is more prevalent in lower income populations. According to Health Survey for England 2024, individuals living in the most deprived 10% of areas in England are almost <strong>three times as likely</strong to be diagnosed with type 2 diabetes compared to those living in the 10% least deprived areas <a href="#references" class="scroll-and-open">[1]</a>.
         </p>
         
         <h3>Emerging Therapies</h3>
@@ -37,11 +37,11 @@
         <h3>Socioeconomic Barriers to Access</h3>
         
         <p>
-        Despite disproportionate clinical need, when breakthrough medicines like GLP-1 RAs become available, those of more precarious socioeconomic backgrounds are usually the last to access them, despite the fact that they typically need them the most. With GLP-1 medications, this disparity is accelerated by a thriving private market, which allows affluent populations to purchase out-of-pocket treatment, while resource-constrained public routes face restricted rollouts <a href="#references" class="scroll-and-open">[3]</a>.
+        Despite disproportionate clinical need, when breakthrough medicines like glp-1 RAs become available, those of more precarious socioeconomic backgrounds are usually the last to access them, despite the fact that they typically need them the most. With glp-1 medications, this disparity is accelerated by a thriving private market, which allows affluent populations to purchase out-of-pocket treatment, while resource-constrained public routes face restricted rollouts <a href="#references" class="scroll-and-open">[3]</a>.
         </p>
 
         <p>
-        However, within public health infrastructure, resource-constrained routes must balance these market forces against clinical need. By analysing NHS primary care prescribing data, this study explores whether public allocation patterns mirror private disparities or actively counter them by targeting regions with the highest underlying disease burden.   
+        However, within public health infrastructure, resource-constrained routes must <strong>balance these market forces against clinical need</strong>. By analysing NHS primary care prescribing data, this study explores whether public allocation patterns mirror private disparities or actively counter them by targeting regions with the highest underlying disease burden.   
         </p>
     
         <br>
@@ -51,12 +51,16 @@
     <button type="button" class="collapsible"> <h2>Methodology</h2> </button>
     <div class="content";>  
 
+        <h3>Data Sources</h3>
+
         <p>This analysis evaluates primary care data from <strong>October 2025</strong>. This specific timeframe was selected to synchronise two critical national datasets</p>
         
         <ul>
           <li><strong>Government Index Release:</strong> Aligns perfectly with the publication of the English Indices of Deprivation 2025 (IoD25).</li>
           <li><strong>NHS Quarterly Window:</strong> Matches the quarterly release of NHS GP Practice registrations required to extract localised LSOA population data.</li>
         </ul>
+
+        <h3>Analysis Methodology and Metrics</h3>
         
         <p>The data processing was executed in <strong>Python</strong> using the <strong>Pandas</strong> library to merge and map the datasets via the following key variable fields:</p>
         
@@ -68,11 +72,11 @@
 
     </div>
 
-        <button type="button" class="collapsible"> <h2>Results</h2> </button>
-        <div class="content";>  
-            
-        </div>
-      
+    <button type="button" class="collapsible"> <h2>Results</h2> </button>
+    <div class="content";>  
+        
+    </div>
+  
   <button type="button" id="references" class="collapsible"> <h2>References</h2> </button>
   <div class="content">
 
