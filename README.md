@@ -1,4 +1,4 @@
-# NHS Prescription Deprivation Analysis
+# NHS England GLP-1 Prescription by IMD Decile
 
 <table>
   <tr>
