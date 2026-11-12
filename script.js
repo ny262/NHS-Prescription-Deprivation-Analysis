@@ -1,3 +1,16 @@
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  }
+};
+
+const mathJaxScript = document.createElement('script');
+mathJaxScript.id = 'MathJax-script';
+mathJaxScript.src = 'https://jsdelivr.net';
+mathJaxScript.async = true;
+document.head.appendChild(mathJaxScript);
+
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
