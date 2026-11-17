@@ -40,7 +40,7 @@ document.querySelectorAll('.remote-link').forEach(link => {
         const targetButton = document.getElementById(targetId);
         
         if (targetButton) {
-            targetButton.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            targetButton.scrollIntoView({ behavior: 'smooth', block: 'start' });
             
             if (!targetButton.classList.contains('active')) {
                 targetButton.click();
